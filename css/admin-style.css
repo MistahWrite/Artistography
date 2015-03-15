@@ -1,0 +1,144 @@
+table {
+  background-color: white;   
+  width: 100%;   
+} 
+
+tbody td {
+  background-color: white;
+  color: black;
+}
+tbody td.odd {   
+  background-color: #666;   
+  color: black;   
+}
+.visible a, .visible a:visited, .visible a:active {
+  color: black;
+}
+tbody td.hovered, tbody td.odd.hovered {
+  background-color: lightblue;
+  color: #666;
+}
+
+a, a:visited, a:active {
+  color: black;
+}
+
+#filter { display: none; }   
+
+th.sortable {
+    color: #666;
+    cursor: pointer;
+    text-decoration: underline;
+}
+th.sortable:hover { color: black; }
+th.sorted-asc, th.sorted-desc  { color: black; }
+
+
+
+.pseudodraggable { float: left; height: 120px; }
+.draggable, .pseudodraggable { border: 2px solid black; background: silver; margin: 2px; padding: 5px; width: 100px; }
+.draggable { cursor: move; height: 100px; }
+
+.droppable { overflow:auto;overflow-x:hide;overflow-y:visible;-ms-overflow-y: visible; width: 100%; background: gray; color: white; padding: 10px; }
+
+.tracklist {
+    height: 330px;
+    overflow: auto;
+}
+
+ /* Taken from: http://jqueryui.com/demos/dialog/#modal-form */
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+div#artists-contain { width: 350px; margin: 20px 0; }
+div#artists-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#artists-contain table td, div#artists-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+.ui-accordion-content {
+    min-height:150px;
+}
+
+.qitem {
+    /* width and height must be even number */
+     
+    /* some styling for the item */
+    border:4px solid #222;  
+    margin:5px 5px 5px 0;
+
+    /* make sure the four divs are hidden after changing the position */
+    overflow:hidden;
+     
+    /* absolute position enabled for children elements*/
+    position:relative;
+     
+    /* display item in single row */
+    float:left;
+     
+    /* hand symbol for ie and other browser */
+    cursor:hand; cursor:pointer;
+}
+
+    .qitem img {
+        border:0;
+    }
+ 
+    /* styling for caption, position absolute is a must to set the z-index */
+    .qitem .caption {
+        background-color: black;
+        position:absolute;
+        z-index:0;  
+        color:#ccc;
+        display:block;
+    }
+.caption {
+     width: 100%;
+     height: 100%;
+}
+ 
+        .qitem .caption h4 {
+            font-size:12px;
+            padding:10px 5px 0 8px;
+            margin:0;
+            color:#369ead;
+        }
+ 
+        .qitem .caption p {
+            font-size:10px; 
+            padding:3px 5px 0 8px;
+            margin:0;
+        }
+ 
+ 
+ 
+/* Generic setting for corners */
+.topLeft, .topRight, .bottomLeft, .bottomRight {
+    /* allow javascript to move the corners */
+    position:absolute;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    z-index:200;
+}
+ 
+/* set the background position for different corners */
+.topLeft {
+    background-position: top left;  
+} 
+ 
+.topRight {
+    background-position: top right; 
+} 
+ 
+.bottomLeft {
+    background-position: bottom left; 
+} 
+ 
+.bottomRight {
+    background-position: bottom right; 
+}
+ 
+.clear {
+    clear:both; 
+}

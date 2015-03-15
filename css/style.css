@@ -1,0 +1,134 @@
+.tracklist {
+    height: 330px;
+    overflow-y: auto;
+}
+
+ /* Taken from: http://jqueryui.com/demos/dialog/#modal-form */
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+div#artists-contain { margin: 20px 0; }
+div#artists-contain table { margin: 1em 0;  }
+div#artists-contain table td, div#artists-contain table th { padding: .6em 10px; text-align: left; }
+.ui-accordion-content {
+    min-height:400px;
+}
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+.qitem {
+    /* width and height must be even number */
+     
+    /* some styling for the item */
+    border:0;  
+    margin:5px 5px 5px 0;
+
+    /* make sure the four divs are hidden after changing the position */
+    overflow:hidden;
+     
+    /* absolute position enabled for children elements*/
+    position:relative;
+     
+    /* display item in single row */
+    float:left;
+     
+    /* hand symbol for ie and other browser */
+    cursor:hand; cursor:pointer;
+}
+
+    .qitem img {
+        border:0;
+    }
+ 
+    /* styling for caption, position absolute is a must to set the z-index */
+    .qitem .caption {
+        background-color: black;
+        position:absolute;
+        z-index:0;  
+        color:#ccc;
+        display:block;
+    }
+.caption {
+     width: 100%;
+     height: 100%;
+}
+ 
+        .qitem .caption h4 {
+            font-size:12px;
+            padding:10px 5px 0 8px;
+            margin:0;
+            color:#369ead;
+        }
+ 
+        .qitem .caption p {
+            font-size:10px; 
+            padding:3px 5px 0 8px;
+            margin:0;
+        }
+ 
+ 
+ 
+/* Generic setting for corners */
+.topLeft, .topRight, .bottomLeft, .bottomRight {
+    /* allow javascript to move the corners */
+    position:absolute;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    z-index:200;
+}
+ 
+/* set the background position for different corners */
+.topLeft {
+    background-position: top left;  
+} 
+ 
+.topRight {
+    background-position: top right; 
+} 
+ 
+.bottomLeft {
+    background-position: bottom left; 
+} 
+ 
+.bottomRight {
+    background-position: bottom right; 
+}
+ 
+.clear {
+    clear:both; 
+}
+
+.artistography_song { 
+    width: 310px;
+}
+span.artistography_song_title {
+	display: inline-block; /* so height and width actually take affect */
+	vertical-align: midde;
+	max-width: 50%;
+	height: 1.5em; /* so overflow hidden works and keeps text on one row */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; /* important to show ellipsis, or words will just be broken off */
+}
+span.artistography_play {
+	display: inline-block;
+	overflow: hidden;
+	width: 6%;
+	max-width: 6%;
+}
+span.artistography_buy {
+	display: inline-block;
+	overflow: hidden;
+	width: 22%;
+	max-width: 22%;
+	float: right;
+}
+span.artistography_length {
+	text-align: right;
+	display: inline-block;
+	overflow: hidden;
+	width: 15%;
+	max-width: 15%;
+	float: right;
+}
