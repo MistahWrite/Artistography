@@ -99,12 +99,7 @@ $(document).ready(function() {
 		console.log('i: ' + i + ', num: ' + num + ', offset: ' + offset);
 
 		var item = window.sm2BarPlayers[0].playlistController.getItem(offset);
-		window.sm2BarPlayers[0].playlistController.select(item);
-		window.sm2BarPlayers[0].setTitle(item);
-		var url = window.sm2BarPlayers[0].playlistController.getURL(item);
-		//window.sm2BarPlayers[0].actions.reset();
-		window.sm2BarPlayers[0].playLink({href: url});
-		//window.sm2BarPlayers[0].actions.play();
+		window.sm2BarPlayers[0].playlistController.playItemByOffset(offset);
           });
     });
 
